@@ -1,23 +1,23 @@
 # tuxio
 Tuxio started as a project for my C programming course at school. It is a small, basic terminal video game. 
 
-Controls:
-  WASD/NUMPAD - Movement
-  e           - Fire Ice Spike
-  q           - Fire fireball
-  SHIFT + q   - Force the game-over screen
-  y           - Force an enemy to spawn
+## Controls:
+  WASD/NUMPAD - Movement <br />
+  e           - Fire Ice Spike <br />
+  q           - Fire fireball <br />
+  SHIFT + q   - Force the game-over screen <br />
+  y           - Force an enemy to spawn <br />
   
-What Works:
-  Movement    - Movement works as intended. User is able to control Tuxio with WASD or NUMPAD
-  Fireball    - Fireball spawns and behaves as expected
-  Ice Spike   - Spike spawns and behaves as expected
-  Enemies     - Enemies movement and spawning works as intended
-  Losing      - Game over screen is displayed when Tuxio collides with an enemy
+## What Works:
+  Movement    - Movement works as intended. User is able to control Tuxio with WASD or NUMPAD <br />
+  Fireball    - Fireball spawns and behaves as expected <br />
+  Ice Spike   - Spike spawns and behaves as expected <br />
+  Enemies     - Enemies movement and spawning works as intended <br />
+  Losing      - Game over screen is displayed when Tuxio collides with an enemy <br />
 
-What Doesn't Work:
-  Collision   - Enemies cannot be killed by fireballs or ice spikes
+## What Doesn't Work:
+  Collision   - Enemies cannot be killed by fireballs or ice spikes <br />
 
-Future:
-  >1 Enemies  - Ability to track up to 5 enemies, spawn randomly.
-  More Enemies- Add different types of enemies that can only be affected by either ice or fire
+## Future:
+  More Enemies- Ability to track up to 5 enemies, spawn randomly <br />
+  More Enemies- Add different types of enemies that can only be affected by either ice or fire <br />
