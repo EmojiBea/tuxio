@@ -2,11 +2,13 @@
 Tuxio started as a project for my C programming course at school. It is a small, basic terminal video game. 
 
 ## Controls:
-  WASD/NUMPAD - Movement <br />
-  e           - Fire Ice Spike <br />
-  q           - Fire fireball <br />
-  SHIFT + q   - Force the game-over screen <br />
-  y           - Force an enemy to spawn <br />
+| Key | Description |
+| --- | --- |
+| WASD/NUMPAD | Movement |
+| e | Fire Ice Spike |
+| q | Fire fireball |
+| SHIFT + q | Force the game-over screen |
+| y |Force an enemy to spawn |
   
 ## What Works:
   Movement    - Movement works as intended. User is able to control Tuxio with WASD or NUMPAD <br />
