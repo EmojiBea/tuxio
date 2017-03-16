@@ -128,6 +128,7 @@ main ()
 		else if(enemy.x == 1)
 		{
 			eraseEnemy(enemy);
+			enemy.isDead = 1;
 		}
 		if (spike.x == COLS - 1)
 	   {
@@ -154,12 +155,23 @@ main ()
 			cleanup();
 		}
 		
-		if(ball.x >= enemy.x && ball.x <= enemy.x+3 && ball.y >= enemy.y+3 && ball.y <= enemy.y)
+		if(spike.x >= enemy.x && spike.x <= enemy.x+3 && spike.y >= enemy.y-2 && spike.y <= enemy.y)
 		{
-			prevEnemy = 0;
 			enemy.isDead = 1;
 		}
 		
+		if(ball.x >= enemy.x && ball.x <= enemy.x+3 && ball.y >= enemy.y-2 && ball.y <= enemy.y)
+		{
+			enemy.isDead = 1;
+		}
+		
+		if(enemy.isDead)
+		{
+			prevEnemy = 0;
+			eraseEnemy(enemy);
+			enemy.x = -1;
+			enemy.y = -1;
+	   }
 		refresh ();
 	 }									  //end while loop is true
   cleanup ();

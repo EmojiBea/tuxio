@@ -25,6 +25,7 @@ struct enemy makeEnemy()
 	enemy.x = COLS-3;
 	enemy.y = rand() % LINES-3;
 	drawEnemy(enemy);
+	enemy.isDead = 0;
 	return enemy;
 }
 
@@ -53,6 +54,8 @@ struct enemy moveEnemy(struct enemy *enemyp)
 		drawEnemy(enemy);
 		if(enemy.x > 1)
 			enemy.isDead = 0;
+		else
+			enemy.isDead = 1;
 	}
 	return enemy;
 }
