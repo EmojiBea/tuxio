@@ -8,7 +8,6 @@ Tuxio started as a project for my C programming course at school. It is a small,
 | e | Fire Ice Spike |
 | q | Fire fireball |
 | SHIFT + q | Force the game-over screen |
-| y |Force an enemy to spawn |
   
 ## What Works:
 | Item | Description |
