@@ -16,14 +16,14 @@ Tuxio started as a project for my C programming course at school. It is a small,
 | Movement | Movement works as intended. User is able to control Tuxio with WASD or NUMPAD |
 | Fireball | Fireball spawns and behaves as expected |  
 | Ice Spike | Spike spawns and behaves as expected |
-| Enemies | Enemies movement and spawning works as intended |
+| Enemies | Enemies movement and automatic spawning works as intended |
 | Losing | Game over screen is displayed when Tuxio collides with an enemy |
 | Collision | Enemies killed by fireballs and ice spikes |
+| Score Tracking | Score is tracked, +1 every time an enemy is killed |
 
 ## What Doesn't Work:
 | Item | Description |
 | --- | --- |
-| Score Tracking | Strange behaviour with score | 
 
 ## Future:
 | Item | Description |

@@ -52,6 +52,13 @@ main ()
 		refresh ();
 		pause ();
 		keypress = getch ();
+		
+	 	if (prevEnemy == 0)
+		{
+			enemy = makeEnemy();
+			prevEnemy++;
+	 	}
+		
 		switch (keypress)
 		  {
 		  case 'w':
@@ -175,7 +182,8 @@ main ()
 			eraseEnemy(enemy);
 			enemy.x = -1;
 			enemy.y = -1;
-	   }
+		}
+		
 		sprintf(scorestr, "%d", score);
 		move(0, (COLS/2)-5);
 		addstr("Score:  ");
