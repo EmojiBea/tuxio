@@ -18,11 +18,13 @@ Tuxio started as a project for my C programming course at school. It is a small,
 | Ice Spike | Spike spawns and behaves as expected |
 | Enemies | Enemies movement and spawning works as intended |
 | Losing | Game over screen is displayed when Tuxio collides with an enemy |
+| Collision | Enemies killed by fireballs and ice spikes |
 
 ## What Doesn't Work:
 | Item | Description |
 | --- | --- |
-| Collision | Enemies cannot be killed by fireballs or ice spikes |
+| Enemy Spawning | Enemies do not spawn |
+| Score Tracking | Strange behaviour with score | 
 
 ## Future:
 | Item | Description |
