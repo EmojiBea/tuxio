@@ -29,6 +29,8 @@ main ()
   int prevfb = 0;
   int prevSpike = 0;
   int prevEnemy = 0;
+  int score = 0;
+  char scorestr[3];
   bool loop = true;
   drawTBig (y, x);
   refresh ();
@@ -39,11 +41,11 @@ main ()
   
   ball.x = -1;
   ball.y = -1;
-  spike.x = -1;
-  spike.y = -1;
-  enemy.x = -1;
-  enemy.y = -1;
-
+  spike.x = -10;
+  spike.y = -10;
+  enemy.x = -20;
+  enemy.y = -20;
+  
   while (loop)
 	 {
 		drawGround ();
@@ -158,11 +160,13 @@ main ()
 		if(spike.x >= enemy.x && spike.x <= enemy.x+3 && spike.y >= enemy.y-2 && spike.y <= enemy.y)
 		{
 			enemy.isDead = 1;
+			score++;
 		}
 		
 		if(ball.x >= enemy.x && ball.x <= enemy.x+3 && ball.y >= enemy.y-2 && ball.y <= enemy.y)
 		{
 			enemy.isDead = 1;
+			score++;
 		}
 		
 		if(enemy.isDead)
@@ -172,6 +176,12 @@ main ()
 			enemy.x = -1;
 			enemy.y = -1;
 	   }
+		sprintf(scorestr, "%d", score);
+		move(0, (COLS/2)-5);
+		addstr("Score:  ");
+		move(0, (COLS/2)+2);
+		addstr(scorestr);
+		
 		refresh ();
 	 }									  //end while loop is true
   cleanup ();

@@ -1,5 +1,5 @@
 # tuxio
-Tuxio started as a project for my C programming course at school. It is a small, basic terminal video game. 
+Tuxio started as a project for my C programming course at school. It is a small, basic terminal video game.
 
 ## Controls:
 | Key | Description |
@@ -23,7 +23,6 @@ Tuxio started as a project for my C programming course at school. It is a small,
 ## What Doesn't Work:
 | Item | Description |
 | --- | --- |
-| Enemy Spawning | Enemies do not spawn |
 | Score Tracking | Strange behaviour with score | 
 
 ## Future:
