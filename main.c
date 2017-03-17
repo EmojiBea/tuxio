@@ -119,12 +119,6 @@ main ()
 				  prevSpike++;
 				}
 			 break;
-		  case 'y':
-			 if (prevEnemy == 0)
-			 {
-				enemy = makeEnemy();
-			 	prevEnemy++;
-			 }
 			case ERR:
 			 break;
 		  }							  //end case 
