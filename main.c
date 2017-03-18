@@ -4,6 +4,7 @@
 #include "fireball.h"
 #include "icespike.h"
 #include "enemy.h"
+#include "highscore.h"
 
 void end ();
 
@@ -30,7 +31,10 @@ main ()
   int prevSpike = 0;
   int prevEnemy = 0;
   int score = 0;
+  int hscore = 0;
   char scorestr[3];
+  char hiscorestr[3];
+
   bool loop = true;
   drawTBig (y, x);
   refresh ();
@@ -178,11 +182,19 @@ main ()
 			enemy.y = -1;
 		}
 		
+		hscore = hiscore(score);
+		
 		sprintf(scorestr, "%d", score);
-		move(0, (COLS/2)-5);
-		addstr("Score:  ");
-		move(0, (COLS/2)+2);
+		sprintf(hiscorestr, "%d", hscore);		
+		
+		move(0, (COLS/2)-13);
+		addstr("Score: ");
+		move(0, (COLS/2)-6);
 		addstr(scorestr);
+		move(0, (COLS/2)-2);
+		addstr("High Score: ");
+		move(0, (COLS/2)+10);
+		addstr(hiscorestr);
 		
 		refresh ();
 	 }									  //end while loop is true

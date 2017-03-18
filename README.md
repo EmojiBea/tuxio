@@ -19,6 +19,7 @@ Tuxio started as a project for my C programming course at school. It is a small,
 | Losing | Game over screen is displayed when Tuxio collides with an enemy |
 | Collision | Enemies killed by fireballs and ice spikes |
 | Score Tracking | Score is tracked, +1 every time an enemy is killed |
+| High Score | High score is stored in file "hiscore" |
 
 ## What Doesn't Work:
 | Item | Description |

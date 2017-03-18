@@ -1,0 +1,1 @@
+int hiscore(int score);
