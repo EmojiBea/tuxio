@@ -3,7 +3,7 @@
 
 int hiscore(int score)
 {
-	FILE *file = fopen("hiscore", "r");
+	FILE *file = fopen("hiscore", "ab+");
 	int length;
 	char *buffer = 0;
 	int hscore = 0;
@@ -23,7 +23,7 @@ int hiscore(int score)
 	if(score > hscore)
 	{
 		hscore = score;
-		file = fopen("hiscore", "w+");
+		file = fopen("hiscore", "wb+");
 		sprintf(scorestr, "%d", hscore);
 		fputs(scorestr, file);
 		fclose(file);
