@@ -1,5 +1,6 @@
 # tuxio
-Tuxio started as a project for my C programming course at school. It is a small, basic terminal video game.
+Tuxio started as a project for my C programming course at school. It is a small, basic terminal video game.<br />
+Simply download all files and "./tuxio"!
 
 ## Controls:
 | Key | Description |
