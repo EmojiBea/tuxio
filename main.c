@@ -156,7 +156,8 @@ main ()
 		  prevSpike = 0;
 		move (LINES + 1, COLS + 1);
 		
-		if((enemy.x >= x) && (enemy.x <= x+3) && (enemy.y >= y-4) && (enemy.y <= y))
+		if((((enemy.x >= x) && (enemy.x <= x+2)) || ((enemy.x+2 >= x) && (enemy.x+2 <= x+2))) && 
+			(((enemy.y >= y-4) && (enemy.y <= y)) || ((enemy.y+1 >= y-4) && (enemy.y+1 <= y))))
 		{
 			gameover();	  
 			cleanup();
