@@ -25,6 +25,7 @@ Simply download all files and "./tuxio"!
 ## What Doesn't Work:
 | Item | Description |
 | --- | --- |
+| Nothing! | Everything works right now! |
 
 ## Future:
 | Item | Description |
