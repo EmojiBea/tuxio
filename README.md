@@ -32,3 +32,4 @@ Simply download all files and "./tuxio"!
 | --- | --- |
 | More Enemies | Ability to track up to 5 enemies, spawn randomly |
 | More Enemies | Add different types of enemies that can only be affected by either ice or fire |
+| Reload | Ability to shoot many fireballs/ice spikes |
